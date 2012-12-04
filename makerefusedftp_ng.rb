@@ -14,8 +14,6 @@ TBLBKCOL = '#EEEE00'
 
 VER = "1.0"
 
-$hostname = `hostname -s`
-
 #-------------------------------------
 #ログから FAIL LOGIN: Client をキーに   
 #該当する行を抽出する                   
@@ -28,17 +26,13 @@ def logAnalyze()
       while text = f.gets
         if text =~ /FAIL LOGIN: Client/
           (strtop,strtail) = text.split(/ FAIL LOGIN: Client /)
-          strtail = strtail.chomp
-          strtail = strtail.gsub(/(\r\n|\r|\n)/, "")
-
+          strtail = strtail.chomp.gsub(/(\r\n|\r|\n)/, "")
           (topLeft,topRight) = strtop.split(/ \[pid /)
           (rLeft,struser) = topRight.split(/ /)
           mon = topLeft.slice(4,3)
           date = topLeft.slice(8,2)
           time = topLeft.slice(11,8)
-
-          struser = struser.gsub(/\[/, "")
-          struser = struser.gsub(/\]/, "")
+          struser = struser.gsub(/(\[|\])/, "")
           login = mon + " " + date + " " + time
 
           if struser === ""
@@ -65,7 +59,6 @@ def uniqIpArray(vsftpdlogs)
   countTargets = []
   vsftpdlogs.each do | vsftpdlog |
     (atackdate,atackip,atackinfo)  = vsftpdlog.split(/<>/)
-    atackinfo = atackinfo.chomp
     atackip = atackip.gsub(/\"/,"")
     countTargets.push(atackip)
   end
@@ -117,8 +110,8 @@ repetitionIps = repetitionIpCount(uniqIPArrays,vsftpdlogs)
 #  html出力                     
 #------------------------------
 
-HTML = File.open(OUTHTML,'w')
-HTML.print <<-"EOM"
+File::open(OUTHTML,'w'){|f|
+f.print <<-"EOM"
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
 <HEAD>
@@ -162,7 +155,7 @@ repetitionIps.each_with_index do | repetitionIp , index |
   (count,date,ip,info) = repetitionIp.split(/<>/)
   seqno = index + 1
   count = sprintf("%4d",count)
-  HTML.print <<-"EOM"
+  f.print <<-"EOM"
           <TR>
             <TD align="right">#{seqno}</TD>
             <TD align="right">#{count}</TD>
@@ -176,7 +169,7 @@ repetitionIps.each_with_index do | repetitionIp , index |
   end
 end
 
-HTML.print <<-"EOM"
+f.print <<-"EOM"
         </TBODY>
       </TABLE>
     </TD>
@@ -209,8 +202,9 @@ EOM
 
 vsftpdlogs.each_with_index do | vsftpdlog , index|
   (atackdate,atackip,atackinfo)  = vsftpdlog.split(/<>/)
+  atackip = atackip.gsub(/\"/,"")
   seqno = index + 1
-  HTML.print <<-"EOM"
+  f.print <<-"EOM"
             <TR>
               <TD align="right">#{seqno}</TD>
               <TD>#{atackdate}</TD>
@@ -223,7 +217,7 @@ vsftpdlogs.each_with_index do | vsftpdlog , index|
   end
 end
 
-HTML.print <<-"EOM"
+f.print <<-"EOM"
           </TBODY>
         </TABLE>
       </TD>
@@ -236,5 +230,4 @@ HTML.print <<-"EOM"
 </BODY>
 </HTML>
 EOM
-
-HTML.close
+}
