@@ -23,34 +23,34 @@ $hostname = `hostname -s`
 #-------------------------------------
 def logAnalyze()
   logs =[]
-  file = open(LOGNAME)
-  if LOGNAME =~ /vsftpd.log/ 
-    while text = file.gets
-      if text =~ /FAIL LOGIN: Client/
-            (strtop,strtail) = text.split(/ FAIL LOGIN: Client /)
-            strtail = strtail.chomp
-            strtail = strtail.gsub(/(\r\n|\r|\n)/, "")
+  File::open(LOGNAME){|f|
+    if LOGNAME =~ /vsftpd.log/ 
+      while text = f.gets
+        if text =~ /FAIL LOGIN: Client/
+          (strtop,strtail) = text.split(/ FAIL LOGIN: Client /)
+          strtail = strtail.chomp
+          strtail = strtail.gsub(/(\r\n|\r|\n)/, "")
 
-            (topLeft,topRight) = strtop.split(/ \[pid /)
-            (rLeft,struser) = topRight.split(/ /)
-            mon = topLeft.slice(4,3)
-            date = topLeft.slice(8,2)
-            time = topLeft.slice(11,8)
+          (topLeft,topRight) = strtop.split(/ \[pid /)
+          (rLeft,struser) = topRight.split(/ /)
+          mon = topLeft.slice(4,3)
+          date = topLeft.slice(8,2)
+          time = topLeft.slice(11,8)
 
-            struser = struser.gsub(/\[/, "")
-            struser = struser.gsub(/\]/, "")
-            login = mon + " " + date + " " + time
+          struser = struser.gsub(/\[/, "")
+          struser = struser.gsub(/\]/, "")
+          login = mon + " " + date + " " + time
 
-            if struser === ""
-              struser = "unknown"
-            end
-            if (($struser !~ /^127.0.0/) && ($struser !~ /^$SELFLAN/)) 
-              logs.push(login + "<>" + strtail + "<>" + struser)
-            end
+          if struser === ""
+            struser = "unknown"
+          end
+          if (($struser !~ /^127.0.0/) && ($struser !~ /^$SELFLAN/)) 
+            logs.push(login + "<>" + strtail + "<>" + struser)
+          end
+        end
       end
     end
-  end
-  file.close
+  }
 
   return logs
 end
@@ -157,11 +157,10 @@ HTML.print <<-"EOM"
             </TR>
 EOM
 
-seqno = 0
 repetitionIps = repetitionIps.sort{ |a,b| a <=> b}
-repetitionIps.each do | repetitionIp |
+repetitionIps.each_with_index do | repetitionIp , index |
   (count,date,ip,info) = repetitionIp.split(/<>/)
-  seqno+=1
+  seqno = index + 1
   count = sprintf("%4d",count)
   HTML.print <<-"EOM"
           <TR>
@@ -208,10 +207,9 @@ HTML.print <<-"EOM"
           </TR>
 EOM
 
-seqno = 0
-vsftpdlogs.each do | vsftpdlog |
+vsftpdlogs.each_with_index do | vsftpdlog , index|
   (atackdate,atackip,atackinfo)  = vsftpdlog.split(/<>/)
-  seqno+=1
+  seqno = index + 1
   HTML.print <<-"EOM"
             <TR>
               <TD align="right">#{seqno}</TD>
