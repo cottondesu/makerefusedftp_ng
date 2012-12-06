@@ -55,17 +55,15 @@ class LogAnalyze
               struser = "unknown"
             end
             if (($struser !~ /^127.0.0/) && ($struser !~ /^$SELFLAN/)) 
-              @logs.push(login + "<>" + strtail + "<>" + struser)
+              @logs.push([login,strtail.gsub(/\"/,""),struser])
             end
           end
         end
       end
     }
-
+    
     return @logs
   end
-
-
 
   #----------------------------------
   # 一意のIP配列作成                   
@@ -73,8 +71,7 @@ class LogAnalyze
   #----------------------------------
   def uniqIpArray()
     @logs.each do | vsftpdlog |
-      (atackdate,atackip,atackinfo)  = vsftpdlog.split(/<>/)
-      atackip = atackip.gsub(/\"/,"")
+      (atackdate,atackip,atackinfo) = vsftpdlog
       @countTargets.push(atackip)
     end
     @countTargets = @countTargets.uniq
@@ -92,15 +89,12 @@ class LogAnalyze
       tmpAatackip =""
       tmpAatackinfo =""
       @logs.each do | vsftpdlog |
-        (tmpAtackdate,tmpAatackip,tmpAatackinfo)  = vsftpdlog.split(/<>/)
-        tmpAatackinfo = tmpAatackinfo.chomp
-        tmpAatackip = tmpAatackip.gsub(/\"/,"")
+        (tmpAtackdate,tmpAatackip,tmpAatackinfo)  = vsftpdlog
         if uniqIP == tmpAatackip
           count+=1
         end    
       end
-      sumline = "#{count}<>#{tmpAtackdate}<>#{tmpAatackip}<>#{tmpAatackinfo}"
-      @sums.push(sumline)
+      @sums.push([count,tmpAtackdate,tmpAatackip,tmpAatackinfo])
     end
 
     return @sums
@@ -108,7 +102,6 @@ class LogAnalyze
 end
 
 class MakeHTML
-
   #-----------------------------------
   #HTMLで出力するログを設定する
   #-----------------------------------
@@ -123,7 +116,7 @@ class MakeHTML
   #-----------------------------------
   def repetitionIpOutput(f)
     @repetitionIps.each_with_index do | repetitionIp , index |
-      (count,date,ip,info) = repetitionIp.split(/<>/)
+      (count,date,ip,info) = repetitionIp
       seqno = index + 1
       count = sprintf("%4d",count)
       f.print <<-"EOM"
@@ -146,9 +139,8 @@ class MakeHTML
   #HTMLで出力
   #-----------------------------------
   def attackIpHistory(f)
-    @vsftpdlogs.each_with_index do | vsftpdlog , index|
-      (atackdate,atackip,atackinfo)  = vsftpdlog.split(/<>/)
-      atackip = atackip.gsub(/\"/,"")
+    @vsftpdlogs.each_with_index do | vsftpdlog , index |
+      (atackdate,atackip,atackinfo)  = vsftpdlog
       seqno = index + 1
       f.print <<-"EOM"
                 <TR>
