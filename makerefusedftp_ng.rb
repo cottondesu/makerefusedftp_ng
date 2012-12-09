@@ -16,16 +16,22 @@ VER = "1.0"
 
 class LogAnalyze
 
-  def initialize
-    @logs = []
-    @countTargets = []
-    @sums = []
+  def initialize()
+    @logs = Hash::new
+    @count_targets = []
+    @sums = Hash::new
+
+    #ログ抽出
+    extract()
+    #重複IPの集計
+    repetitionip_count()
+
   end
 
   #----------------------------------
   # loginを取得する
   #----------------------------------
-  def getLogin(line)
+  def get_login(line)
     mon = line.slice(4,3)
     date = line.slice(8,2)
     time = line.slice(11,8)    
@@ -35,97 +41,104 @@ class LogAnalyze
 
   #-------------------------------------
   #ログから FAIL LOGIN: Client をキーに   
-  #該当する行を抽出する                   
-  #@return logs:抽出した行配列            
+  #該当する行を抽出する
   #-------------------------------------
   def extract
     File::open(LOGNAME){|f|
-      if LOGNAME =~ /vsftpd.log/ 
+      if LOGNAME =~ /vsftpd.log/
+        count = 1 
         while text = f.gets
           if text =~ /FAIL LOGIN: Client/
-            (strtop,strtail) = text.split(/ FAIL LOGIN: Client /)
-            strtail = strtail.chomp.gsub(/(\r\n|\r|\n)/, "")
-            (topLeft,topRight) = strtop.split(/ \[pid /)
-            (rLeft,struser) = topRight.split(/ /)
+            (str_top,str_tail) = text.split(/ FAIL LOGIN: Client /)
+            str_tail = str_tail.chomp.gsub(/(\r\n|\r|\n)/, "")
+            (top_left,top_right) = str_top.split(/ \[pid /)
+            (r_left,str_user) = top_right.split(/ /)
 
-            struser = struser.gsub(/(\[|\])/, "")
-            login = getLogin(topLeft)
+            login = get_login(top_left)
 
-            if struser === ""
-              struser = "unknown"
+            if str_user === ""
+              str_user = "unknown"
             end
-            if (($struser !~ /^127.0.0/) && ($struser !~ /^$SELFLAN/)) 
-              @logs.push([login,strtail.gsub(/\"/,""),struser])
+            if ((str_user !~ /^127.0.0/) && (str_user !~ /^$SELFLAN/)) 
+              @logs.store("line#{count}",[login,str_tail.gsub(/\"/,""),str_user.gsub(/(\[|\])/, "")])
+              count += 1
             end
           end
         end
       end
     }
-    
-    return @logs
+    #一意のIP配列作成
+    uniqip_array()
   end
 
   #----------------------------------
-  # 一意のIP配列作成                   
-  # @param vsftpdlogs:vsftpdlog      
+  # 一意のIP配列作成
   #----------------------------------
-  def uniqIpArray()
+  def uniqip_array()
+    count = 1
     @logs.each do | vsftpdlog |
-      (atackdate,atackip,atackinfo) = vsftpdlog
-      @countTargets.push(atackip)
+      #IPを追加
+      @count_targets.push(vsftpdlog[1][1])
     end
-    @countTargets = @countTargets.uniq
+    @count_targets = @count_targets.uniq
   end
 
   #----------------------------------
-  # vsftpd.logから重複するIPを集計     
-  # @param uniqIPArrays:一意のIP配列  
-  # @param vsftpdlogs:vsftpdlog      
+  # vsftpd.logから重複するIPを集計
   #----------------------------------
-  def repetitionIpCount()
-    @countTargets.each do | uniqIP |
+  def repetitionip_count()
+    @count_targets.each_with_index do | uniqip , index |
       count = 0
-      tmpAtackdate =""
-      tmpAatackip =""
-      tmpAatackinfo =""
+      index += 1
+      (tmp_atackdate,tmp_atackip,tmp_atackinfo) = ["","",""]
       @logs.each do | vsftpdlog |
-        (tmpAtackdate,tmpAatackip,tmpAatackinfo)  = vsftpdlog
-        if uniqIP == tmpAatackip
+        #配列内のIPと比較
+        if uniqip == vsftpdlog[1][1]
           count+=1
-        end    
+        end
+        (tmp_atackdate,tmp_atackip,tmp_atackinfo) = [vsftpdlog[1][0],vsftpdlog[1][1],vsftpdlog[1][2]]
       end
-      @sums.push([count,tmpAtackdate,tmpAatackip,tmpAatackinfo])
+      @sums.store("line#{index}",[count,tmp_atackdate,tmp_atackip,tmp_atackinfo])
     end
+  end
 
-    return @sums
+  #-----------------------------
+  #解析したログを取得する
+  #-----------------------------
+  def get_log()
+    return [@logs,@sums]
   end
 end
 
 class MakeHTML
+
+  def initialize(log)
+    set_log(log)
+  end
+
   #-----------------------------------
   #HTMLで出力するログを設定する
   #-----------------------------------
-  def setLog(vsftpdlogs,repetitionIps)
-    @vsftpdlogs = vsftpdlogs
-    @repetitionIps = repetitionIps.sort{ |a,b| a <=> b}
+  def set_log(log)
+    (@vsftpdlogs,@repetitionips) = log
+    @repetitionips = @repetitionips.sort{ |a,b| a <=> b}
   end
 
   #-----------------------------------
   #不正アクセスのIPカウント、日付、IPを
   #HTMLで出力
   #-----------------------------------
-  def repetitionIpOutput(f)
-    @repetitionIps.each_with_index do | repetitionIp , index |
-      (count,date,ip,info) = repetitionIp
+  def repetitionip_output(f)
+    @repetitionips.each_with_index do | repetitionip , index |
       seqno = index + 1
-      count = sprintf("%4d",count)
+      count = sprintf("%4d",repetitionip[1][0].to_i)
       f.print <<-"EOM"
               <TR>
                 <TD align="right">#{seqno}</TD>
                 <TD align="right">#{count}</TD>
-                <TD>#{date}</TD>
-                <TD>#{ip}</TD>
-                <TD>#{info}</TD>
+                <TD>#{repetitionip[1][1]}</TD>
+                <TD>#{repetitionip[1][2]}</TD>
+                <TD>#{repetitionip[1][3]}</TD>
               </TR>
       EOM
       if seqno == SUMTOP
@@ -138,16 +151,15 @@ class MakeHTML
   #不正アクセスのIPの履歴を
   #HTMLで出力
   #-----------------------------------
-  def attackIpHistory(f)
+  def attackip_history(f)
     @vsftpdlogs.each_with_index do | vsftpdlog , index |
-      (atackdate,atackip,atackinfo)  = vsftpdlog
       seqno = index + 1
       f.print <<-"EOM"
                 <TR>
                   <TD align="right">#{seqno}</TD>
-                  <TD>#{atackdate}</TD>
-                  <TD>#{atackip}</TD>
-                  <TD>#{atackinfo}</TD>
+                  <TD>#{vsftpdlog[1][0]}</TD>
+                  <TD>#{vsftpdlog[1][1]}</TD>
+                  <TD>#{vsftpdlog[1][2]}</TD>
                 </TR>
       EOM
       if seqno == HISTORYTOP
@@ -198,7 +210,7 @@ class MakeHTML
       EOM
 
       #不正アクセスのIPカウント、日付、IPを出力
-      repetitionIpOutput(f)
+      repetitionip_output(f)
 
       f.print <<-"EOM"
               </TBODY>
@@ -232,7 +244,7 @@ class MakeHTML
       EOM
 
       #不正アクセスのIP履歴を出力
-      attackIpHistory(f)
+      attackip_history(f)
 
       f.print <<-"EOM"
                 </TBODY>
@@ -251,24 +263,12 @@ class MakeHTML
   end
 end
 
-#------------- メイン部 -----------------------------------------#
-
+#-----------------------------
+#メイン部
+#-----------------------------
 def main()
-  #ログ解析クラス
-  log = LogAnalyze.new
-  #HTML作成クラス
-  html = MakeHTML.new
-
-  #ログの解析
-  vsftpdlogs = log.extract
-  #一意のIP配列作成
-  log.uniqIpArray()
-  #重複するIPの集計
-  repetitionIps = log.repetitionIpCount()
-  #出力するログを設定
-  html.setLog(vsftpdlogs,repetitionIps)
-  #HTML出力
-  html.output
+  #HTML作成クラス　HTML出力
+  MakeHTML.new(LogAnalyze.new.get_log).output
 end
 
 main()
