@@ -87,9 +87,8 @@ class LogAnalyze
   # vsftpd.logから重複するIPを集計
   #----------------------------------
   def repetitionip_count()
-    @count_targets.each_with_index do | uniqip , index |
+    @count_targets.each do | uniqip |
       count = 0
-      index += 1
       h = {}
       @logs.each do | vsftpdlog |
         #配列内のIPと比較
