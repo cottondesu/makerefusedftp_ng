@@ -17,9 +17,9 @@ VER = "1.0"
 class LogAnalyze
 
   def initialize()
-    @logs = Hash::new
+    @logs = []
     @count_targets = []
-    @sums = Hash::new
+    @sums = []
 
     #ログ抽出
     extract()
@@ -60,8 +60,8 @@ class LogAnalyze
               str_user = "unknown"
             end
             if ((str_user !~ /^127.0.0/) && (str_user !~ /^$SELFLAN/)) 
-              @logs.store("line#{count}",[login,str_tail.gsub(/\"/,""),str_user.gsub(/(\[|\])/, "")])
-              count += 1
+              h = {"date"=>login, "addr"=>str_tail.gsub(/\"/,""), "info"=>str_user.gsub(/(\[|\])/, "")}
+              @logs.push(h)
             end
           end
         end
@@ -78,7 +78,7 @@ class LogAnalyze
     count = 1
     @logs.each do | vsftpdlog |
       #IPを追加
-      @count_targets.push(vsftpdlog[1][1])
+      @count_targets.push(vsftpdlog["addr"])
     end
     @count_targets = @count_targets.uniq
   end
@@ -90,15 +90,15 @@ class LogAnalyze
     @count_targets.each_with_index do | uniqip , index |
       count = 0
       index += 1
-      (tmp_atackdate,tmp_atackip,tmp_atackinfo) = ["","",""]
+      h = {}
       @logs.each do | vsftpdlog |
         #配列内のIPと比較
-        if uniqip == vsftpdlog[1][1]
+        if uniqip == vsftpdlog["addr"]
           count+=1
         end
-        (tmp_atackdate,tmp_atackip,tmp_atackinfo) = [vsftpdlog[1][0],vsftpdlog[1][1],vsftpdlog[1][2]]
+        h = {"count"=>count ,"date"=>vsftpdlog["date"] ,"addr"=>vsftpdlog["addr"] ,"info"=>vsftpdlog["info"]}
       end
-      @sums.store("line#{index}",[count,tmp_atackdate,tmp_atackip,tmp_atackinfo])
+      @sums.push(h)
     end
   end
 
