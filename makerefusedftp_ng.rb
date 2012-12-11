@@ -129,18 +129,17 @@ class MakeHTML
   #-----------------------------------
   def repetitionip_output(f)
     @repetitionips.each_with_index do | repetitionip , index |
-      seqno = index + 1
-      count = sprintf("%4d",repetitionip[1][0].to_i)
+      count = sprintf("%4d",repetitionip["count"])
       f.print <<-"EOM"
               <TR>
-                <TD align="right">#{seqno}</TD>
+                <TD align="right">#{index + 1}</TD>
                 <TD align="right">#{count}</TD>
-                <TD>#{repetitionip[1][1]}</TD>
-                <TD>#{repetitionip[1][2]}</TD>
-                <TD>#{repetitionip[1][3]}</TD>
+                <TD>#{repetitionip["date"]}</TD>
+                <TD>#{repetitionip["addr"]}</TD>
+                <TD>#{repetitionip["info"]}</TD>
               </TR>
       EOM
-      if seqno == SUMTOP
+      if (index + 1) == SUMTOP
         break
       end
     end
@@ -152,16 +151,15 @@ class MakeHTML
   #-----------------------------------
   def attackip_history(f)
     @vsftpdlogs.each_with_index do | vsftpdlog , index |
-      seqno = index + 1
       f.print <<-"EOM"
                 <TR>
-                  <TD align="right">#{seqno}</TD>
-                  <TD>#{vsftpdlog[1][0]}</TD>
-                  <TD>#{vsftpdlog[1][1]}</TD>
-                  <TD>#{vsftpdlog[1][2]}</TD>
+                  <TD align="right">#{index + 1}</TD>
+                  <TD>#{vsftpdlog["date"]}</TD>
+                  <TD>#{vsftpdlog["addr"]}</TD>
+                  <TD>#{vsftpdlog["info"]}</TD>
                 </TR>
       EOM
-      if seqno == HISTORYTOP
+      if (index + 1) == HISTORYTOP
           break
       end
     end
