@@ -66,8 +66,6 @@ class LogAnalyze
         end
       end
     }
-    #一意のIP配列作成
-    uniqip_array()
   end
 
   #----------------------------------
