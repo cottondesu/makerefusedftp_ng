@@ -74,18 +74,16 @@ class LogAnalyze
   # 一意のIP配列作成
   #----------------------------------
   def uniqip_array()
-    count = 1
-    @logs.each do | vsftpdlog |
-      #IPを追加
-      @count_targets.push(vsftpdlog["addr"])
-    end
-    @count_targets = @count_targets.uniq
+    @logs.map { |log|
+      log['addr']
+    }.uniq
   end
 
   #----------------------------------
   # vsftpd.logから重複するIPを集計
   #----------------------------------
   def repetitionip_count()
+    @count_targets = uniqip_array()
     @count_targets.each do | uniqip |
       count = 0
       h = {}
