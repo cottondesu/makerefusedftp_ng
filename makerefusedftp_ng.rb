@@ -56,9 +56,8 @@ class LogAnalyze
 
             login = get_login(top_left)
 
-            if str_user === ""
-              str_user = "unknown"
-            end
+            str_user = "unknown" if str_user.empty?
+            
             if ((str_user !~ /^127.0.0/) && (str_user !~ /^$SELFLAN/)) 
               h = {"date"=>login, "addr"=>str_tail.gsub(/\"/,""), "info"=>str_user.gsub(/(\[|\])/, "")}
               @logs.push(h)
