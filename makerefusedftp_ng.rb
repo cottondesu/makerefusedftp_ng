@@ -46,7 +46,6 @@ class LogAnalyze
   def extract
     File::open(LOGNAME){|f|
       if LOGNAME =~ /vsftpd.log/
-        count = 1 
         while text = f.gets
           if text =~ /FAIL LOGIN: Client/
             (str_top,str_tail) = text.split(/ FAIL LOGIN: Client /)
@@ -59,8 +58,8 @@ class LogAnalyze
             str_user = "unknown" if str_user.empty?
             
             if ((str_user !~ /^127.0.0/) && (str_user !~ /^$SELFLAN/)) 
-              @logs << {"date"=>login, "addr"=>str_tail.gsub(/\"/,""),
-                        "info"=>str_user.gsub(/(\[|\])/, "")}
+              @logs << {:date=>login, :addr=>str_tail.gsub(/\"/,""),
+                        :info=>str_user.gsub(/(\[|\])/, "")}
             end
           end
         end
@@ -90,7 +89,8 @@ class LogAnalyze
         if uniqip == vsftpdlog["addr"]
           count+=1
         end
-        h = {"count"=>count ,"date"=>vsftpdlog["date"] ,"addr"=>vsftpdlog["addr"] ,"info"=>vsftpdlog["info"]}
+        h = {:count=>count ,:date=>vsftpdlog["date"] ,
+             :addr=>vsftpdlog["addr"] ,:info=>vsftpdlog["info"]}
       end
       @sums.push(h)
     end
@@ -124,14 +124,14 @@ class MakeHTML
   #-----------------------------------
   def repetitionip_output(f)
     @repetitionips.each_with_index do | repetitionip , index |
-      count = sprintf("%4d",repetitionip["count"])
+      count = sprintf("%4d",repetitionip[:count])
       f.print <<-"EOM"
               <TR>
                 <TD align="right">#{index + 1}</TD>
                 <TD align="right">#{count}</TD>
-                <TD>#{repetitionip["date"]}</TD>
-                <TD>#{repetitionip["addr"]}</TD>
-                <TD>#{repetitionip["info"]}</TD>
+                <TD>#{repetitionip[:date]}</TD>
+                <TD>#{repetitionip[:addr]}</TD>
+                <TD>#{repetitionip[:info]}</TD>
               </TR>
       EOM
       if (index + 1) == SUMTOP
@@ -149,9 +149,9 @@ class MakeHTML
       f.print <<-"EOM"
                 <TR>
                   <TD align="right">#{index + 1}</TD>
-                  <TD>#{vsftpdlog["date"]}</TD>
-                  <TD>#{vsftpdlog["addr"]}</TD>
-                  <TD>#{vsftpdlog["info"]}</TD>
+                  <TD>#{vsftpdlog[:date]}</TD>
+                  <TD>#{vsftpdlog[:addr]}</TD>
+                  <TD>#{vsftpdlog[:info]}</TD>
                 </TR>
       EOM
       if (index + 1) == HISTORYTOP
