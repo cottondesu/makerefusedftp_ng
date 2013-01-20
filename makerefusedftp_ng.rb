@@ -119,7 +119,7 @@ class MakeHTML
   #-----------------------------------
   def set_log(log)
     (@vsftpdlogs,@repetitionips) = log
-    @repetitionips = @repetitionips.sort{ |a,b| a <=> b}
+    @repetitionips.sort!
   end
 
   #-----------------------------------
