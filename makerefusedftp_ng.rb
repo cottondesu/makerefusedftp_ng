@@ -44,8 +44,8 @@ class LogAnalyze
   #該当する行を抽出する
   #-------------------------------------
   def extract
-    File::open(LOGNAME){|f|
-      if LOGNAME =~ /vsftpd.log/
+    if LOGNAME =~ /vsftpd.log/
+      File::open(LOGNAME){|f|
         while text = f.gets
           if text =~ /FAIL LOGIN: Client/
             (str_top,str_tail) = text.split(/ FAIL LOGIN: Client /)
@@ -63,8 +63,8 @@ class LogAnalyze
             end
           end
         end
-      end
-    }
+      }
+    end
   end
 
   #----------------------------------
