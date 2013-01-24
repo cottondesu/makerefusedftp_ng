@@ -86,11 +86,11 @@ class LogAnalyze
       h = {}
       @logs.each do | vsftpdlog |
         #配列内のIPと比較
-        if uniqip == vsftpdlog["addr"]
+        if uniqip == vsftpdlog[:addr]
           count+=1
         end
-        h = {:count=>count ,:date=>vsftpdlog["date"] ,
-             :addr=>vsftpdlog["addr"] ,:info=>vsftpdlog["info"]}
+        h = {:count=>count ,:date=>vsftpdlog[:date] ,
+             :addr=>vsftpdlog[:addr] ,:info=>vsftpdlog[:info]}
       end
       @sums.push(h)
     end
@@ -123,6 +123,7 @@ class MakeHTML
   #HTMLで出力
   #-----------------------------------
   def repetitionip_output(f)
+    @repetitionips = @repetitionips[0,SUMTOP]
     @repetitionips.each_with_index do | repetitionip , index |
       count = sprintf("%4d",repetitionip[:count])
       f.print <<-"EOM"
@@ -134,9 +135,6 @@ class MakeHTML
                 <TD>#{repetitionip[:info]}</TD>
               </TR>
       EOM
-      if (index + 1) == SUMTOP
-        break
-      end
     end
   end
 
@@ -145,6 +143,7 @@ class MakeHTML
   #HTMLで出力
   #-----------------------------------
   def attackip_history(f)
+    @vsftpdlogs = @vsftpdlogs[0,HISTORYTOP]
     @vsftpdlogs.each_with_index do | vsftpdlog , index |
       f.print <<-"EOM"
                 <TR>
@@ -154,9 +153,6 @@ class MakeHTML
                   <TD>#{vsftpdlog[:info]}</TD>
                 </TR>
       EOM
-      if (index + 1) == HISTORYTOP
-          break
-      end
     end
   end
 
