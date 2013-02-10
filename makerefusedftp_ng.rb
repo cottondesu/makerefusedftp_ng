@@ -1,3 +1,4 @@
+#定数読み込み
 require './makerefusedftp_const'
 include MakerefusedftpConst
 
