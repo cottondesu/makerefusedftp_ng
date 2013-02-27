@@ -60,7 +60,7 @@ class LogAnalyze
   #----------------------------------
   def uniqip_array()
     @logs.map { |log|
-      log['addr']
+      log[:addr]
     }.uniq
   end
 
