@@ -37,7 +37,7 @@ class LogAnalyze
         while text = f.gets
           if text =~ /FAIL LOGIN: Client/
             (str_top,str_tail) = text.split(/ FAIL LOGIN: Client /)
-            str_tail = str_tail.chomp.gsub(/(\r\n|\r|\n)/, "")
+            str_tail = str_tail.chomp
             (top_left,top_right) = str_top.split(/ \[pid /)
             (r_left,str_user) = top_right.split(/ /)
 

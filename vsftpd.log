@@ -1,0 +1,282 @@
+Sun Oct 21 08:57:59 2012 [pid 6381] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:58:01 2012 [pid 6380] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:05 2012 [pid 6380] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:08 2012 [pid 6380] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:09 2012 [pid 6383] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:58:11 2012 [pid 6382] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:15 2012 [pid 6382] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:18 2012 [pid 6382] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:19 2012 [pid 6385] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:58:21 2012 [pid 6384] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:24 2012 [pid 6384] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:27 2012 [pid 6384] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:28 2012 [pid 6387] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:58:30 2012 [pid 6386] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:33 2012 [pid 6386] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:36 2012 [pid 6386] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:37 2012 [pid 6389] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:58:39 2012 [pid 6388] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:42 2012 [pid 6388] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:45 2012 [pid 6388] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:46 2012 [pid 6391] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:58:48 2012 [pid 6390] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:51 2012 [pid 6390] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:54 2012 [pid 6390] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:58:55 2012 [pid 6393] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:58:57 2012 [pid 6392] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:00 2012 [pid 6392] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:03 2012 [pid 6392] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:04 2012 [pid 6395] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:59:06 2012 [pid 6394] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:09 2012 [pid 6394] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:13 2012 [pid 6394] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:14 2012 [pid 6397] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:59:16 2012 [pid 6396] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:19 2012 [pid 6396] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:22 2012 [pid 6396] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:23 2012 [pid 6399] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:59:25 2012 [pid 6398] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:28 2012 [pid 6398] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:31 2012 [pid 6398] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:32 2012 [pid 6402] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:59:35 2012 [pid 6401] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:38 2012 [pid 6401] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:41 2012 [pid 6401] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:42 2012 [pid 6404] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:59:44 2012 [pid 6403] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:47 2012 [pid 6403] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:51 2012 [pid 6403] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:52 2012 [pid 6406] CONNECT: Client "211.237.40.170"
+Sun Oct 21 08:59:54 2012 [pid 6405] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:57 2012 [pid 6405] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 08:59:59 2012 [pid 6405] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:00 2012 [pid 6408] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:00:03 2012 [pid 6407] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:05 2012 [pid 6407] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:08 2012 [pid 6407] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:09 2012 [pid 6416] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:00:11 2012 [pid 6415] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:14 2012 [pid 6415] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:17 2012 [pid 6415] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:18 2012 [pid 6418] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:00:21 2012 [pid 6417] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:24 2012 [pid 6417] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:27 2012 [pid 6417] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:28 2012 [pid 6420] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:00:30 2012 [pid 6419] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:34 2012 [pid 6419] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:37 2012 [pid 6419] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:38 2012 [pid 6422] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:00:40 2012 [pid 6421] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:43 2012 [pid 6421] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:46 2012 [pid 6421] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:47 2012 [pid 6424] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:00:49 2012 [pid 6423] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:52 2012 [pid 6423] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:56 2012 [pid 6423] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:00:57 2012 [pid 6426] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:00:59 2012 [pid 6425] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:02 2012 [pid 6425] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:06 2012 [pid 6425] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:07 2012 [pid 6446] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:01:09 2012 [pid 6445] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:12 2012 [pid 6445] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:15 2012 [pid 6445] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:17 2012 [pid 6449] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:01:19 2012 [pid 6448] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:22 2012 [pid 6448] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:25 2012 [pid 6448] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:26 2012 [pid 6451] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:01:28 2012 [pid 6450] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:31 2012 [pid 6450] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:35 2012 [pid 6450] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:36 2012 [pid 6453] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:01:38 2012 [pid 6452] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:41 2012 [pid 6452] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:45 2012 [pid 6452] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:46 2012 [pid 6455] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:01:48 2012 [pid 6454] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:51 2012 [pid 6454] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:54 2012 [pid 6454] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:01:55 2012 [pid 6457] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:01:58 2012 [pid 6456] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:01 2012 [pid 6456] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:05 2012 [pid 6456] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:06 2012 [pid 6459] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:02:08 2012 [pid 6458] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:11 2012 [pid 6458] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:15 2012 [pid 6458] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:16 2012 [pid 6461] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:02:18 2012 [pid 6460] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:22 2012 [pid 6460] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:25 2012 [pid 6460] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:26 2012 [pid 6463] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:02:29 2012 [pid 6462] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:32 2012 [pid 6462] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:36 2012 [pid 6462] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:37 2012 [pid 6465] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:02:39 2012 [pid 6464] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:42 2012 [pid 6464] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:45 2012 [pid 6464] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:47 2012 [pid 6467] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:02:49 2012 [pid 6466] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:52 2012 [pid 6466] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:56 2012 [pid 6466] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:02:57 2012 [pid 6469] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:03:00 2012 [pid 6468] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:03 2012 [pid 6468] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:06 2012 [pid 6468] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:07 2012 [pid 6471] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:03:09 2012 [pid 6470] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:12 2012 [pid 6470] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:15 2012 [pid 6470] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:16 2012 [pid 6473] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:03:19 2012 [pid 6472] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:23 2012 [pid 6472] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:26 2012 [pid 6472] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:27 2012 [pid 6475] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:03:30 2012 [pid 6474] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:33 2012 [pid 6474] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:36 2012 [pid 6474] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:37 2012 [pid 6477] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:03:39 2012 [pid 6476] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:42 2012 [pid 6476] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:46 2012 [pid 6476] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:47 2012 [pid 6479] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:03:49 2012 [pid 6478] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:53 2012 [pid 6478] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:56 2012 [pid 6478] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:03:57 2012 [pid 6481] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:04:00 2012 [pid 6480] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:02 2012 [pid 6480] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:06 2012 [pid 6480] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:07 2012 [pid 6483] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:04:09 2012 [pid 6482] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:12 2012 [pid 6482] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:15 2012 [pid 6482] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:16 2012 [pid 6485] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:04:18 2012 [pid 6484] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:22 2012 [pid 6484] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:24 2012 [pid 6484] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:26 2012 [pid 6487] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:04:28 2012 [pid 6486] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:32 2012 [pid 6486] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:35 2012 [pid 6486] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:04:36 2012 [pid 6490] CONNECT: Client "211.237.40.170"
+Sun Oct 21 09:04:38 2012 [pid 6489] [Administrator] FAIL LOGIN: Client "211.237.40.170"
+Sun Oct 21 09:53:02 2012 [pid 6508] CONNECT: Client "220.208.157.195"
+Sun Oct 21 09:53:02 2012 [pid 6510] CONNECT: Client "220.208.157.195"
+Sun Oct 21 09:53:02 2012 [pid 6512] CONNECT: Client "220.208.157.195"
+Sun Oct 21 09:53:02 2012 [pid 6511] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 10:02:05 2012 [pid 6538] CONNECT: Client "220.208.157.195"
+Sun Oct 21 10:02:05 2012 [pid 6540] CONNECT: Client "220.208.157.195"
+Sun Oct 21 10:02:05 2012 [pid 6539] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 10:02:36 2012 [pid 6543] CONNECT: Client "220.208.157.195"
+Sun Oct 21 10:02:36 2012 [pid 6545] CONNECT: Client "220.208.157.195"
+Sun Oct 21 10:02:36 2012 [pid 6544] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 11:39:01 2012 [pid 6603] CONNECT: Client "220.208.154.156"
+Sun Oct 21 11:39:01 2012 [pid 6605] CONNECT: Client "220.208.154.156"
+Sun Oct 21 11:39:02 2012 [pid 6604] [hh-hashi] OK LOGIN: Client "220.208.154.156"
+Sun Oct 21 22:47:37 2012 [pid 7083] CONNECT: Client "220.208.157.195"
+Sun Oct 21 22:47:38 2012 [pid 7085] CONNECT: Client "220.208.157.195"
+Sun Oct 21 22:47:39 2012 [pid 7084] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 22:56:04 2012 [pid 7091] CONNECT: Client "220.208.157.195"
+Sun Oct 21 22:56:04 2012 [pid 7093] CONNECT: Client "220.208.157.195"
+Sun Oct 21 22:56:04 2012 [pid 7092] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 23:07:52 2012 [pid 7119] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:07:52 2012 [pid 7121] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:07:52 2012 [pid 7120] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 23:09:04 2012 [pid 7124] CONNECT: Client "192.168.0.4"
+Sun Oct 21 23:09:04 2012 [pid 7123] [sa-ta-under-gy] OK LOGIN: Client "192.168.0.4"
+Sun Oct 21 23:12:03 2012 [pid 7128] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:12:04 2012 [pid 7130] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:12:04 2012 [pid 7129] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 23:26:41 2012 [pid 7131] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - 5?N???m/01 - FREEDOM.mp3", 7241159 bytes, 237.13Kbyte/sec
+Sun Oct 21 23:27:01 2012 [pid 7131] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - 5?N???m/02 - THE EDGE OF CHAOS ?`?????????`.mp3", 4871942 bytes, 237.01Kbyte/sec
+Sun Oct 21 23:27:11 2012 [pid 7141] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:27:14 2012 [pid 7143] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:27:16 2012 [pid 7142] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 23:27:29 2012 [pid 7131] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - 5?N???m/03 - ??.mp3", 6024237 bytes, 215.85Kbyte/sec
+Sun Oct 21 23:28:06 2012 [pid 7131] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - 5?N???m/04 - ????????.mp3", 8945779 bytes, 236.28Kbyte/sec
+Sun Oct 21 23:28:37 2012 [pid 7131] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - 5?N???m/05 - ??????????????.mp3", 7495050 bytes, 236.64Kbyte/sec
+Sun Oct 21 23:29:04 2012 [pid 7131] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - 5?N???m/06 - ????????????????.mp3", 6467488 bytes, 236.37Kbyte/sec
+Sun Oct 21 23:29:27 2012 [pid 7131] [hh-hashi] FAIL DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - 5?N???m/07 - RED?~BLUE.mp3", 6210840 bytes, 271.17Kbyte/sec
+Sun Oct 21 23:36:09 2012 [pid 7149] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:36:09 2012 [pid 7151] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:36:09 2012 [pid 7150] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 23:37:51 2012 [pid 7154] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:37:51 2012 [pid 7156] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:37:51 2012 [pid 7155] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 23:38:14 2012 [pid 7159] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:38:14 2012 [pid 7161] CONNECT: Client "220.208.157.195"
+Sun Oct 21 23:38:14 2012 [pid 7160] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Sun Oct 21 23:40:48 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/01-???????J????.mp3", 9471334 bytes, 236.51Kbyte/sec
+Sun Oct 21 23:41:30 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/02-????????????.mp3", 10217391 bytes, 236.02Kbyte/sec
+Sun Oct 21 23:42:25 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/03-???????u.mp3", 13118022 bytes, 235.63Kbyte/sec
+Sun Oct 21 23:43:12 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/04-HARD RAIN.mp3", 11263325 bytes, 234.14Kbyte/sec
+Sun Oct 21 23:44:14 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/05-Good night.mp3", 14175489 bytes, 224.90Kbyte/sec
+Sun Oct 21 23:44:59 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/06-MELODY.mp3", 10832502 bytes, 234.71Kbyte/sec
+Sun Oct 21 23:45:40 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/07-All My Loving.mp3", 9842268 bytes, 236.50Kbyte/sec
+Sun Oct 21 23:46:35 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/08-??????.mp3", 12287357 bytes, 222.62Kbyte/sec
+Sun Oct 21 23:47:23 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/09-???l.mp3", 11253950 bytes, 229.20Kbyte/sec
+Sun Oct 21 23:48:10 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/10-Marcy's Song.mp3", 10958043 bytes, 225.53Kbyte/sec
+Sun Oct 21 23:48:57 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/11-IT'S ONLY LOVE.mp3", 11017780 bytes, 230.38Kbyte/sec
+Sun Oct 21 23:49:37 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/12-HELLO.mp3", 9595697 bytes, 236.04Kbyte/sec
+Sun Oct 21 23:50:25 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/13-Good Luck.mp3", 11336501 bytes, 236.19Kbyte/sec
+Sun Oct 21 23:51:07 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/14-Message.mp3", 10063813 bytes, 236.14Kbyte/sec
+Sun Oct 21 23:51:55 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/15-Heart.mp3", 11576401 bytes, 235.87Kbyte/sec
+Sun Oct 21 23:52:43 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 1/Disc 1/16-you.mp3", 11445621 bytes, 235.74Kbyte/sec
+Sun Oct 21 23:56:57 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/01-HEAVEN.mp3", 8769151 bytes, 231.86Kbyte/sec
+Sun Oct 21 23:57:37 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/02-Peach!!.mp3", 9762850 bytes, 235.95Kbyte/sec
+Sun Oct 21 23:58:31 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/03-Squall.mp3", 12997885 bytes, 236.03Kbyte/sec
+Sun Oct 21 23:59:17 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/04-Gang??.mp3", 10126474 bytes, 218.80Kbyte/sec
+Mon Oct 22 00:00:14 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/05-????.mp3", 11924775 bytes, 204.03Kbyte/sec
+Mon Oct 22 00:00:56 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/06-?????F?????x??.mp3", 9793794 bytes, 232.22Kbyte/sec
+Mon Oct 22 00:01:39 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/07-??.mp3", 9953017 bytes, 228.87Kbyte/sec
+Mon Oct 22 00:02:46 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/08-????????.mp3", 14974425 bytes, 217.71Kbyte/sec
+Mon Oct 22 00:03:48 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/09-??????????????.mp3", 12431565 bytes, 196.09Kbyte/sec
+Mon Oct 22 00:04:37 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/10-????????????????.mp3", 10673006 bytes, 215.94Kbyte/sec
+Mon Oct 22 00:05:26 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/11-RED?~BLUE.mp3", 10944149 bytes, 219.10Kbyte/sec
+Mon Oct 22 00:06:42 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/12-???????? ?C?? ????.mp3", 13089729 bytes, 174.70Kbyte/sec
+Mon Oct 22 00:07:51 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/13-milk tea.mp3", 12090565 bytes, 174.30Kbyte/sec
+Mon Oct 22 00:09:17 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 2/Disc 2/14-??????????????????.mp3", 15195110 bytes, 173.78Kbyte/sec
+Mon Oct 22 00:10:44 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/01-THE EDGE OF CHAOS?`?????????`.mp3", 8142241 bytes, 173.73Kbyte/sec
+Mon Oct 22 00:11:51 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/02-????????SHOW.mp3", 11660425 bytes, 172.19Kbyte/sec
+Mon Oct 22 00:13:08 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/03-????.mp3", 13697942 bytes, 174.39Kbyte/sec
+Mon Oct 22 00:14:11 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/04-?z-new love new world-.mp3", 11324073 bytes, 178.04Kbyte/sec
+Mon Oct 22 00:15:19 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/05-???g.mp3", 12107600 bytes, 174.95Kbyte/sec
+Mon Oct 22 00:16:29 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/06-??????.mp3", 12425252 bytes, 176.19Kbyte/sec
+Mon Oct 22 00:17:19 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/07-KISS????.mp3", 8911261 bytes, 177.76Kbyte/sec
+Mon Oct 22 00:18:26 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/08-???N.mp3", 12135812 bytes, 175.64Kbyte/sec
+Mon Oct 22 00:19:35 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/09-?u.mp3", 12540789 bytes, 178.95Kbyte/sec
+Mon Oct 22 00:20:43 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 3/Disc 3/10-?Q???`ultramarine?`.mp3", 12008352 bytes, 175.37Kbyte/sec
+Mon Oct 22 00:21:30 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/cover1.jpg", 29795 bytes, 295.98Kbyte/sec
+Mon Oct 22 00:21:31 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/cover2.jpg", 64993 bytes, 331.21Kbyte/sec
+Mon Oct 22 00:21:31 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/Thumbs.db", 11776 bytes, 241.82Kbyte/sec
+Mon Oct 22 00:22:56 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/Disc 4/01-?Scolor?`a song for the wonderful year?`.mp3", 11730428 bytes, 173.97Kbyte/sec
+Mon Oct 22 00:23:56 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/Disc 4/02-???????v???C?h.mp3", 11052268 bytes, 181.31Kbyte/sec
+Mon Oct 22 00:25:06 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/Disc 4/03-???W 2010.mp3", 13053008 bytes, 181.89Kbyte/sec
+Mon Oct 22 00:26:29 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/Disc 4/04-?Scolor?`a song for the wonderful year?`(Original Karaoke).mp3", 11765821 bytes, 139.92Kbyte/sec
+Mon Oct 22 00:27:43 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/Disc 4/05-???????v???C?h(Original Karaoke).mp3", 11087661 bytes, 149.40Kbyte/sec
+Mon Oct 22 00:28:51 2012 [pid 7162] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/music/ALBUM/???R????/???R???? - THE BEST BANG!!/Disc 4/Disc 4/06-???W 2010(Original Karaoke).mp3", 12883982 bytes, 186.66Kbyte/sec
+Mon Oct 22 00:40:17 2012 [pid 7215] CONNECT: Client "220.208.157.195"
+Mon Oct 22 00:40:17 2012 [pid 7217] CONNECT: Client "220.208.157.195"
+Mon Oct 22 00:40:18 2012 [pid 7216] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Mon Oct 22 00:41:24 2012 [pid 7221] CONNECT: Client "220.208.157.195"
+Mon Oct 22 00:41:24 2012 [pid 7223] CONNECT: Client "220.208.157.195"
+Mon Oct 22 00:41:24 2012 [pid 7222] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Mon Oct 22 00:58:24 2012 [pid 7232] CONNECT: Client "220.208.157.195"
+Mon Oct 22 00:58:24 2012 [pid 7234] CONNECT: Client "220.208.157.195"
+Mon Oct 22 00:58:24 2012 [pid 7233] [hh-hashi] OK LOGIN: Client "220.208.157.195"
+Mon Oct 22 01:03:44 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???01??????.rar", 43508419 bytes, 194.96Kbyte/sec
+Mon Oct 22 01:07:21 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???02??????.rar", 45243934 bytes, 204.25Kbyte/sec
+Mon Oct 22 01:10:48 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???03??????.rar", 48850310 bytes, 231.56Kbyte/sec
+Mon Oct 22 01:14:31 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???04??????.rar", 53663328 bytes, 234.57Kbyte/sec
+Mon Oct 22 01:18:08 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???05??????.rar", 51919857 bytes, 234.85Kbyte/sec
+Mon Oct 22 01:21:39 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???06??????.rar", 50781112 bytes, 234.85Kbyte/sec
+Mon Oct 22 01:25:03 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???07??????.rar", 49044707 bytes, 234.82Kbyte/sec
+Mon Oct 22 01:28:26 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???08??????.rar", 48511504 bytes, 234.73Kbyte/sec
+Mon Oct 22 01:31:42 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???09??????.rar", 47132411 bytes, 234.53Kbyte/sec
+Mon Oct 22 01:34:56 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???10??????.rar", 46474734 bytes, 234.22Kbyte/sec
+Mon Oct 22 01:38:01 2012 [pid 7235] [hh-hashi] OK DOWNLOAD: Client "220.208.157.195", "/comic/jojo/???????????????????????? ??????????????? ????????????????????????????????? ???11??????.rar", 44150480 bytes, 234.35Kbyte/sec
+Mon Oct 22 02:11:36 2012 [pid 7311] CONNECT: Client "187.87.255.145"
