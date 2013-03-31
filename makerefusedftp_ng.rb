@@ -94,8 +94,8 @@ end
 
 class MakeHTML
 
-  def initialize(log)
-    set_log(log)
+  def initialize()
+    set_log(LogAnalyze.new.get_log)
   end
 
   #-----------------------------------
@@ -244,7 +244,7 @@ end
 #-----------------------------
 def main()
   #HTML作成クラス　HTML出力
-  MakeHTML.new(LogAnalyze.new.get_log).output
+  MakeHTML.new().output
 end
 
 main()
