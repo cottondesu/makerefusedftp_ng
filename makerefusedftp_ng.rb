@@ -28,6 +28,17 @@ class LogAnalyze
   end
 
   #-------------------------------------
+  #ログ1行から必要な情報を抽出する
+  #-------------------------------------
+  def line_analyze(text)
+    (str_top,@str_ip) = text.split(/ FAIL LOGIN: Client /)
+    @str_ip.chomp
+    (top_left,top_right) = str_top.split(/ \[pid /)
+    (r_left,@str_user) = top_right.split(/ /)
+    @login = get_login(top_left) 
+  end
+
+  #-------------------------------------
   #ログから FAIL LOGIN: Client をキーに   
   #該当する行を抽出する
   #-------------------------------------
@@ -36,18 +47,14 @@ class LogAnalyze
       File::open(LOGNAME){|f|
         while text = f.gets
           if text =~ /FAIL LOGIN: Client/
-            (str_top,str_tail) = text.split(/ FAIL LOGIN: Client /)
-            str_tail = str_tail.chomp
-            (top_left,top_right) = str_top.split(/ \[pid /)
-            (r_left,str_user) = top_right.split(/ /)
 
-            login = get_login(top_left)
+            line_analyze(text)
 
-            str_user = "unknown" if str_user.empty?
+            @str_user = "unknown" if @str_user.empty?
             
-            if ((str_user !~ /^127.0.0/) && (str_user !~ /^$SELFLAN/)) 
-              @logs << {:date=>login, :addr=>str_tail.gsub(/\"/,""),
-                        :info=>str_user.gsub(/(\[|\])/, "")}
+            if ((@str_user !~ /^127.0.0/) && (@str_user !~ /^$SELFLAN/)) 
+              @logs << {:date=>@login, :addr=>@str_ip.gsub(/\"/,""),
+                        :info=>@str_user.gsub(/(\[|\])/, "")}
             end
           end
         end
