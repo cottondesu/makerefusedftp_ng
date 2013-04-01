@@ -32,7 +32,6 @@ class LogAnalyze
   #-------------------------------------
   def line_analyze(text)
     (str_top,@str_ip) = text.split(/ FAIL LOGIN: Client /)
-    @str_ip.chomp
     (top_left,top_right) = str_top.split(/ \[pid /)
     (r_left,@str_user) = top_right.split(/ /)
     @login = get_login(top_left) 
@@ -53,7 +52,7 @@ class LogAnalyze
             @str_user = "unknown" if @str_user.empty?
             
             if ((@str_user !~ /^127.0.0/) && (@str_user !~ /^$SELFLAN/)) 
-              @logs << {:date=>@login, :addr=>@str_ip.gsub(/\"/,""),
+              @logs << {:date=>@login, :addr=>@str_ip.chomp.gsub(/\"/,""),
                         :info=>@str_user.gsub(/(\[|\])/, "")}
             end
           end
