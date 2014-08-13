@@ -4,6 +4,8 @@ Usage
 -------  
 ruby -Ku makerefusedftp_ng.rb <log file of vsftpd format>  
   
+vsftpd.log is required at the same level as the makerefusedftp_ng.rb  
+  
   
 log file of vsftpd format  
 -------  
